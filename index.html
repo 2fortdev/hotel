@@ -10,6 +10,9 @@
         <p class="navbar-brand">Join the Sandwich Stop's rewards program</p>
     </nav>
 <form>
+  <div class="tab-content">
+    <div class="tab-pane container active" id="home">
+      <div class="form-box">
     <div class="input-group">
         <span class="input-group-text">First and last name</span>
         <input type="text" aria-label="First name" class="form-control" placeholder="John">
@@ -33,9 +36,13 @@
       <form action="/action_page.php">
         <label for="appt">What time do you most often eat at the Stop?:</label>
         <input type="time" id="appt" name="appt" class="form-control">
-        <div id="appt" class="form-text">We'll never share your email with anyone else.</div>
+      
 
       <form action="/action_page.php">
+        
+              
+  
+        
         <p>Please select your favorite Sandwich:</p>
         <input type="radio" id="Meat" name="fav_sandwich" value="MEAT">
         <label for="Meat">Meatball Sub</label><br>
@@ -44,7 +51,14 @@
         <input type="radio" id="Roast" name="fav_sandwich" value="ROAST">
         <label for="Roast">Roast Beef</label>
         <br>
-        
+        <br>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>What is your favorite side?</option>
+          <option value="1">Cookie</option>
+          <option value="2">Pickle</option>
+          <option value="3">Chips</option>
+        </select>
+     
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Get emails about new products?</label>
@@ -55,5 +69,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
     <button type="reset" class="btn btn-primary">Reset</button>
+  </div>
+</div>
 </form>
 </body>
